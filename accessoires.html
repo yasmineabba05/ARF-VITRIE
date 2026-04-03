@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL RIDING FAMILY - Nos Produits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="accesoire.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <div class="logo-title-container">
+        <img src="arf.jpeg" alt="All Riding Family Logo" class="logo-image">
+        <div class="logo-text">ARF</div>
+      </div>
+      <h1 style="color: rgba(228, 41, 8, 0.774); font-size:1rem; font-weight:500;">
+        WELCOME TO ARF COMMUNITY
+      </h1>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link" data-mobile-close>Accueil</a>
+      <a href="DAY.html" class="nav-link" data-mobile-close>Be Careful</a>
+
+      <div class="dropdown" id="dropdownHistoire">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownHistoire">Histoire</a>
+        <div class="dropdown-content">
+          <a href="origine.html" data-mobile-close>Les Origines</a>
+          <a href="histoir.html" data-mobile-close>Histoire</a>
+          <a href="valeur.html" data-mobile-close>Nos Valeurs</a>
+        </div>
+      </div>
+
+      <div class="dropdown" id="dropdownMembres">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownMembres">Membres</a>
+        <div class="dropdown-content">
+          <a href="#" data-mobile-close>Membres Actifs</a>
+          <a href="#" data-mobile-close>Rejoindre la Communauté</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-link" data-mobile-close>Accessoires</a>
+    </nav>
+  </header>
+
+    <!-- Hero Section Produits -->
+    <section class="products-hero">
+        <div class="hero-content">
+            <span class="hero-badge">Équipements Premium</span>
+            <h1 class="hero-title">NOTRE SÉLECTION PRODUITS</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-subtitle">
+                Découvrez notre collection exclusive d'équipements moto, soigneusement sélectionnés 
+                pour les passionnés exigeants. Qualité, sécurité et style au rendez-vous.
+            </p>
+        </div>
+    </section>
+
+    <!-- Grille de Produits -->
+    <section class="products-grid-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Produit 1 - Casque -->
+                <article class="product-card" data-category="casques">
+                    <div class="product-badge badge-popular">Populaire</div>
+                    <div class="product-image">
+                        <img src="arf.jpeg" alt="Casque moto premium">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Casques</span>
+                        <h3 class="product-title">ARF Predator Pro Carbon</h3>
+                        <p class="product-description">
+                            Casque intégral en fibre de carbone ultra-léger. Visière anti-buée et système 
+                            de ventilation avancé pour un confort optimal sur longs trajets.
+                        </p>
+                        <div class="product-specs">
+                            <span class="spec-item">
+                                <i class="fas fa-weight"></i> 1250g
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-shield-alt"></i> ECE 22.06
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-palette"></i> 5 coloris
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 2 - Veste -->
+                <article class="product-card" data-category="vestes">
+                    <div class="product-badge badge-new">Nouveau</div>
+                    <div class="product-image">
+                        <img src="arf.jpeg" alt="Veste moto cuir">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Vestes & Protection</span>
+                        <h3 class="product-title">Veste Cuir Racing Pro</h3>
+                        <p class="product-description">
+                            Veste en cuir pleine fleur avec protection renforcée aux coudes, épaules et dos. 
+                            Conçue pour les performances et le style sur route et piste.
+                        </p>
+                        <div class="product-specs">
+                            <span class="spec-item">
+                                <i class="fas fa-thermometer-half"></i> 4 saisons
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-vest"></i> CE Niveau 2
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-tint"></i> Imperméable
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 3 - Gants -->
+                <article class="product-card" data-category="gants">
+                    <div class="product-badge badge-promo">Promo -20%</div>
+                    <div class="product-image">
+                        <img src="arf.jpeg" alt="Gants moto hiver">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Gants</span>
+                        <h3 class="product-title">Gants Touring Expert</h3>
+                        <p class="product-description">
+                            Gants chauffants avec protection renforcée aux articulations. Membrane 
+                            Windstopper et doublure polaire pour les conditions hivernales.
+                        </p>
+                        <div class="product-specs">
+                            <span class="spec-item">
+                                <i class="fas fa-bolt"></i> Chauffants
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-hand-paper"></i> Touchscreen
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-snowflake"></i> -15°C
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 4 - Accessoire -->
+                <article class="product-card" data-category="accessoires">
+                    <div class="product-image">
+                        <img src="arf.jpeg" alt="Intercom moto">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Accessoires</span>
+                        <h3 class="product-title">Intercom ARF Connect Pro</h3>
+                        <p class="product-description">
+                            Système de communication Bluetooth longue portée (800m). Résistant à l'eau, 
+                            contrôle vocal et jusqu'à 15 heures d'autonomie.
+                        </p>
+                        <div class="product-specs">
+                            <span class="spec-item">
+                                <i class="fas fa-bluetooth"></i> Bluetooth 5.2
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-clock"></i> 15h autonomie
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-users"></i> 4 riders
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 5 - Casque Jet -->
+                <article class="product-card" data-category="casques">
+                    <div class="product-badge badge-new">Nouveau</div>
+                    <div class="product-image">
+                        <img src="arf.jpeg" alt="Casque jet vintage">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Casques</span>
+                        <h3 class="product-title">Casque Jet Vintage Pro</h3>
+                        <p class="product-description">
+                            Casque jet style rétro avec visière teintée intégrée. Confort premium et 
+                            protection optimale pour les amateurs de style café racer.
+                        </p>
+                        <div class="product-specs">
+                            <span class="spec-item">
+                                <i class="fas fa-sun"></i> Visière solaire
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-wind"></i> Aérodynamique
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-head-side-mask"></i> Écru/Noir/Marron
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produit 6 - Pantalon -->
+                <article class="product-card" data-category="vestes">
+                    <div class="product-image">
+                        <img src="arf.jpeg" alt="Pantalon moto">   
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Vestes & Protection</span>
+                        <h3 class="product-title">Pantalon Adventure Pro</h3>
+                        <p class="product-description">
+                            Pantalon technique multi-saisons avec protections aux hanches et genoux. 
+                            Membrane imperméable et aérations réglables pour un confort optimal.
+                        </p>
+                        <div class="product-specs">
+                            <span class="spec-item">
+                                <i class="fas fa-tshirt"></i> Taille ajustable
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-shield-alt"></i> Protections CE
+                            </span>
+                            <span class="spec-item">
+                                <i class="fas fa-compress-arrows-alt"></i> Compact
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Section Logo et description -->
+        <div class="footer-section">
+            <div class="footer-brand">
+                <span class="moto-icon">🏍️</span>
+                <h3>ALL RIDING FAMILY</h3>
+                <span class="moto-icon">🏍️</span>
+            </div>
+            <p class="footer-motto">Une famille sans frontières</p>
+            <p class="footer-description">
+                Rejoignez la plus grande communauté de passionnés de moto. 
+                Partages, événements et aventures sans limites.
+            </p>
+        </div>
+
+        <!-- Liens rapides -->
+        <div class="footer-section">
+            <h4>Liens Rapides</h4>
+            <ul class="footer-links">
+                <ul class="footer-links">
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="valeur.html">NOS VALEURS</a></li>
+                    <li><a href="DAY.html">BE CAREFUL</a></li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- Contact et réseaux -->
+        <div class="footer-section">
+            <h4>Nous Contacter</h4>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> allridingfamily@.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> El Jadida , Maroc</p>
+            </div>
+            
+            <div class="social-media">
+                <h4>Suivez-nous</h4>
+                <div class="social-media">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/all_riding_family/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section Footer Bottom - AJOUTÉE -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="footer-credits">
+                <span>Développé avec passion par</span>
+                <a href="https://www.instagram.com/yasmi._.ne.ab/" target="_blank" class="developer-link">
+                    <i class="fas fa-code"></i>
+                    Abba Yasmine
+                </a>
+            </div>
+            <p>&copy; 2024 ALL RIDING FAMILY. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Filtrage des produits
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Retirer la classe active de tous les boutons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Ajouter la classe active au bouton cliqué
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filtrer les produits
+                    productCards.forEach(card => {
+                        if (filterValue === 'all') {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            if (card.getAttribute('data-category') === filterValue) {
+                                card.style.display = 'block';
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, 10);
+                            } else {
+                                card.style.opacity = '0';
+                                card.style.transform = 'translateY(20px)';
+                                setTimeout(() => {
+                                    card.style.display = 'none';
+                                }, 300);
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Vue rapide
+            const quickViewButtons = document.querySelectorAll('.quick-view');
+            quickViewButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const productCard = this.closest('.product-card');
+                    const productName = productCard.querySelector('.product-title').textContent;
+                    alert(`Vue rapide: ${productName}\n\nFonctionnalité complète à implémenter avec une modale.`);
+                });
+            });
+
+            // Animation au scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeInUp 0.6s ease-out forwards';
+                    }
+                });
+            }, observerOptions);
+
+            // Observer les cartes produit et les features
+            document.querySelectorAll('.product-card, .feature-item').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Retour en haut
+            const backToTop = document.querySelector('.back-to-top');
+            backToTop.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Ajouter l'animation slideOut
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes slideIn {
+                    from {
+                        transform: translateX(100%);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+                
+                @keyframes slideOut {
+                    from {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                    to {
+                        transform: translateX(100%);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+
+        // Variables globales
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        // Fonction pour ouvrir/fermer le menu mobile
+        function toggleMobileMenu() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            
+            // Empêche le défilement du body quand le menu est ouvert
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        // Fonction pour fermer le menu mobile
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Fermer tous les dropdowns
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+        
+        // Fonction pour toggle les dropdowns sur mobile
+        function toggleDropdown(dropdownId) {
+            if (window.innerWidth <= 768) {
+                event.preventDefault();
+                const dropdown = document.getElementById(dropdownId);
+                dropdown.classList.toggle('active');
+            }
+        }
+        
+        // Événements
+        hamburger.addEventListener('click', toggleMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Fermer le menu en cliquant sur un lien (pour mobile)
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') !== '#') {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        // Ne pas fermer si c'est un toggle de dropdown
+                        if (!this.classList.contains('dropdown-toggle')) {
+                            closeMobileMenu();
+                        }
+                    }
+                });
+            }
+        });
+        
+        // Fermer le menu si la fenêtre est redimensionnée au-dessus de 768px
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Gérer les dropdowns sur desktop (hover) et mobile (click)
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            // Desktop: hover
+            dropdown.addEventListener('mouseenter', function() {
+                if (window.innerWidth > 768) {
+                    this.classList.add('active');
+                }
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                if (window.innerWidth > 768) {
+                    this.classList.remove('active');
+                }
+            });
+        });
+
+           // Animation simple au scroll
+           document.addEventListener('DOMContentLoaded', function() {
+               // Animation pour les éléments qui apparaissent au scroll
+               const observer = new IntersectionObserver((entries) => {
+                   entries.forEach(entry => {
+                       if (entry.isIntersecting) {
+                           entry.target.classList.add('animate-pop');
+                       }
+                   });
+               }, {
+                   threshold: 0.1
+               });
+   
+               // Observer tous les éléments à animer
+               document.querySelectorAll('.feature-item, .cta-content').forEach(el => {
+                   observer.observe(el);
+               });
+   
+               // Effet de parallaxe simple
+               window.addEventListener('scroll', function() {
+                   const scrolled = window.pageYOffset;
+                   const hero = document.querySelector('.hero-minimal');
+                   hero.style.backgroundPosition = `center ${scrolled * 0.5}px`;
+               });
+   
+               // Smooth scroll pour les ancres
+               document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                   anchor.addEventListener('click', function(e) {
+                       e.preventDefault();
+                       const targetId = this.getAttribute('href');
+                       if (targetId !== '#') {
+                           const targetElement = document.querySelector(targetId);
+                           if (targetElement) {
+                               window.scrollTo({
+                                   top: targetElement.offsetTop - 80,
+                                   behavior: 'smooth'
+                               });
+                           }
+                       }
+                   });
+               });
+           });
+    </script>
+</body>
+</html>

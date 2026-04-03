@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire - ALL RIDING FAMILY</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="histoir.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <div class="logo-title-container">
+        <img src="arf.jpeg" alt="All Riding Family Logo" class="logo-image">
+        <div class="logo-text">ARF</div>
+      </div>
+      <h1 style="color: rgba(228, 41, 8, 0.774); font-size:1rem; font-weight:500;">
+        WELCOME TO ARF COMMUNITY
+      </h1>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link" data-mobile-close>Accueil</a>
+        <a href="DAY.html" class="nav-link" data-mobile-close>Be Careful</a>
+
+      <div class="dropdown" id="dropdownHistoire">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownHistoire">Histoire</a>
+        <div class="dropdown-content">
+          <a href="origine.html" data-mobile-close>Les Origines</a>
+          <a href="histoir.html" data-mobile-close>Histoire</a>
+          <a href="valeur.html" data-mobile-close>Nos Valeurs</a>
+        </div>
+      </div>
+
+      <div class="dropdown" id="dropdownMembres">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownMembres">Membres</a>
+        <div class="dropdown-content">
+          <a href="#" data-mobile-close>Membres Actifs</a>
+          <a href="#" data-mobile-close>Rejoindre la Communauté</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-link" data-mobile-close>Accessoires</a>
+    </nav>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="hero-histoire">
+        <div class="hero-content">
+            <h1 class="hero-title">NOTRE HISTOIRE</h1>
+            <p class="hero-subtitle">Du rêve d'une poignée de passionnés à une famille motarde internationale</p>
+            <p class="hero-quote">
+                "Nous ne sommes pas nés pour rester à quai. Nos vies sont des routes, 
+                nos motos sont nos ailes, et notre famille est notre port d'attache."
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="histoire-container">
+        <!-- Introduction -->
+        <section class="histoire-section">
+            <div class="section-header">
+                <h2 class="section-title">L'ÉPOPÉE ARF</h2>
+                <p class="section-subtitle">
+                    Découvrez comment une simple passion pour la moto a donné naissance à l'une des communautés 
+                    motardes les plus soudées et dynamiques, traversant les frontières et les océans.
+                </p>
+            </div>
+
+            <!-- Chapitres de l'histoire -->
+            <div class="chapitres-container">
+                <article class="chapitre-card" style="background: linear-gradient(145deg, #1A1A1A, #000000); border-radius: 15px; overflow: hidden; transition: all 0.4s ease; border: 2px solid transparent; margin: 2rem 0;">
+                    <div class="chapitre-container" style="display: flex; flex-direction: row; align-items: center; min-height: 400px;">
+                        <!-- Image à gauche (centrée verticalement) -->
+                        <div class="chapitre-image" style="flex: 0 0 45%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+                            <div style="width: 100%; max-width: 400px; overflow: hidden; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                <img src="arf.jpeg" alt="Premières rencontres à El Jadida" 
+                                     style="width: 100%; height: auto; display: block;">
+                            </div>
+                        </div>
+                        
+                        <!-- Texte à droite -->
+                        <div class="chapitre-content" style="flex: 1; padding: 2.5rem 2.5rem 2.5rem 0; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                            <h3 class="chapitre-title" style="color: #FFD700; font-size: 2rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; border-left: 4px solid #D32F2F; padding-left: 1rem;">
+                                La naissance de la communauté
+                            </h3>
+                            <div class="chapitre-text" style="color: #FFFFFF; font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+                                <p style="margin-bottom: 1rem;">
+                                    À l'origine, la communauté ARF était connue sous le nom <strong style="color: #FFD700;">Anwar Rachoui Family</strong>, fondée par un groupe restreint de quatre membres unis par la passion de la moto, la route et l'esprit de fraternité.
+                                </p>
+                                <p style="margin-bottom: 1rem;">
+                                    Ce noyau initial, basé sur l'amitié et le respect, a rapidement attiré d'autres passionnés partageant les mêmes valeurs, ce qui a permis à la clique de grandir progressivement. Face à cette évolution, le groupe a choisi d'adopter le nom <strong style="color: #FFD700;">All Riding Family (ARF)</strong>, un nom plus représentatif d'une famille ouverte à tous les riders, sans distinction.
+                                </p>
+                                <p style="margin-bottom: 1rem;">
+                                    Avec cette nouvelle identité, ARF a commencé à structurer ses activités et à organiser des événements solidaires pour aider les personnes dans le besoin, tout en lançant des actions de sensibilisation à la sécurité routière, notamment à El Jadida.
+                                </p>
+                                <p>
+                                    Le succès de ces initiatives et la forte cohésion entre les membres ont permis à ARF d'étendre son influence au-delà d'El Jadida, donnant naissance à une nouvelle section à Casablanca.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <style>
+                        .chapitre-card:hover {
+                            transform: translateY(-5px);
+                            border-color: #D32F2F;
+                            box-shadow: 0 10px 25px rgba(211, 47, 47, 0.3);
+                        }
+                        
+                        /* Responsive pour tous les écrans */
+                        @media (max-width: 1200px) {
+                            .chapitre-container {
+                                min-height: 350px !important;
+                            }
+                            
+                            .chapitre-image {
+                                flex: 0 0 40% !important;
+                                padding: 1.5rem !important;
+                            }
+                            
+                            .chapitre-image > div {
+                                max-width: 350px !important;
+                            }
+                            
+                            .chapitre-content {
+                                padding: 2rem 1.5rem 2rem 0 !important;
+                            }
+                            
+                            .chapitre-title {
+                                font-size: 1.8rem !important;
+                            }
+                            
+                            .chapitre-text {
+                                font-size: 1.05rem !important;
+                            }
+                        }
+                        
+                        @media (max-width: 992px) {
+                            .chapitre-container {
+                                min-height: 300px !important;
+                            }
+                            
+                            .chapitre-image {
+                                flex: 0 0 35% !important;
+                                padding: 1.25rem !important;
+                            }
+                            
+                            .chapitre-image > div {
+                                max-width: 300px !important;
+                            }
+                            
+                            .chapitre-content {
+                                padding: 1.75rem 1.25rem 1.75rem 0 !important;
+                            }
+                            
+                            .chapitre-title {
+                                font-size: 1.6rem !important;
+                                margin-bottom: 1.25rem !important;
+                            }
+                            
+                            .chapitre-text {
+                                font-size: 1rem !important;
+                                line-height: 1.75 !important;
+                            }
+                        }
+                        
+                        @media (max-width: 768px) {
+                            .chapitre-container {
+                                flex-direction: column !important;
+                                min-height: auto !important;
+                            }
+                            
+                            .chapitre-image {
+                                flex: 0 0 auto !important;
+                                width: 100% !important;
+                                padding: 1.5rem 1.5rem 0 1.5rem !important;
+                                height: auto !important;
+                            }
+                            
+                            .chapitre-image > div {
+                                max-width: 400px !important;
+                                margin: 0 auto !important;
+                            }
+                            
+                            .chapitre-content {
+                                padding: 1.5rem !important;
+                                width: 100% !important;
+                            }
+                            
+                            .chapitre-title {
+                                font-size: 1.5rem !important;
+                                margin-bottom: 1rem !important;
+                                text-align: center !important;
+                                border-left: none !important;
+                                padding-left: 0 !important;
+                                border-bottom: 2px solid #D32F2F !important;
+                                padding-bottom: 0.5rem !important;
+                            }
+                            
+                            .chapitre-text {
+                                font-size: 1rem !important;
+                                text-align: left !important;
+                            }
+                        }
+                        
+                        @media (max-width: 576px) {
+                            .chapitre-image {
+                                padding: 1rem 1rem 0 1rem !important;
+                            }
+                            
+                            .chapitre-image > div {
+                                max-width: 320px !important;
+                            }
+                            
+                            .chapitre-content {
+                                padding: 1rem !important;
+                            }
+                            
+                            .chapitre-title {
+                                font-size: 1.4rem !important;
+                                margin-bottom: 0.75rem !important;
+                            }
+                            
+                            .chapitre-text {
+                                font-size: 0.95rem !important;
+                                line-height: 1.7 !important;
+                            }
+                            
+                            .chapitre-text p {
+                                margin-bottom: 0.75rem !important;
+                            }
+                        }
+                        
+                        @media (max-width: 400px) {
+                            .chapitre-image > div {
+                                max-width: 280px !important;
+                            }
+                            
+                            .chapitre-title {
+                                font-size: 1.3rem !important;
+                            }
+                            
+                            .chapitre-text {
+                                font-size: 0.9rem !important;
+                            }
+                        }
+                        
+                        /* Pour les très grands écrans */
+                        @media (min-width: 1600px) {
+                            .chapitre-container {
+                                min-height: 450px !important;
+                            }
+                            
+                            .chapitre-image {
+                                flex: 0 0 50% !important;
+                                padding: 3rem !important;
+                            }
+                            
+                            .chapitre-image > div {
+                                max-width: 500px !important;
+                            }
+                            
+                            .chapitre-content {
+                                padding: 3rem 3rem 3rem 0 !important;
+                            }
+                            
+                            .chapitre-title {
+                                font-size: 2.2rem !important;
+                                margin-bottom: 2rem !important;
+                            }
+                            
+                            .chapitre-text {
+                                font-size: 1.2rem !important;
+                                line-height: 1.9 !important;
+                            }
+                        }
+                    </style>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <div style="text-align: center; margin-top: 4rem;">
+            <h2 style="color: var(--or); font-size: 2rem; margin-bottom: 2rem;">FAITES PARTIE DE L'HISTOIRE</h2>
+            <p style="color: var(--blanc); font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem;">
+                Rejoignez notre famille et écrivez avec nous les prochains chapitres de cette incroyable aventure.
+                Ensemble, créons des souvenirs qui dureront toute une vie.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer Simple -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Section Logo et description -->
+        <div class="footer-section">
+            <div class="footer-brand">
+                <span class="moto-icon">🏍️</span>
+                <h3>ALL RIDING FAMILY</h3>
+                <span class="moto-icon">🏍️</span>
+            </div>
+            <p class="footer-motto">Une famille sans frontières</p>
+            <p class="footer-description">
+                Rejoignez la plus grande communauté de passionnés de moto. 
+                Partages, événements et aventures sans limites.
+            </p>
+        </div>
+
+        <!-- Liens rapides -->
+        <div class="footer-section">
+            <h4>Liens Rapides</h4>
+            <ul class="footer-links">
+                <ul class="footer-links">
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="valeur.html">NOS VALEURS</a></li>
+                    <li><a href="DAY.html">BE CAREFUL</a></li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- Contact et réseaux -->
+        <div class="footer-section">
+            <h4>Nous Contacter</h4>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> allridingfamily@.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> El Jadida , Maroc</p>
+            </div>
+            
+            <div class="social-media">
+                <h4>Suivez-nous</h4>
+                <div class="social-media">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/all_riding_family/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section Footer Bottom - AJOUTÉE -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="footer-credits">
+                <span>Développé avec passion par</span>
+                <a href="https://www.instagram.com/yasmi._.ne.ab/" target="_blank" class="developer-link">
+                    <i class="fas fa-code"></i>
+                    Abba Yasmine
+                </a>
+            </div>
+            <p>&copy; 2024 ALL RIDING FAMILY. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Variables globales
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        // Fonction pour ouvrir/fermer le menu mobile
+        function toggleMobileMenu() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            
+            // Empêche le défilement du body quand le menu est ouvert
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        // Fonction pour fermer le menu mobile
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Fermer tous les dropdowns
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+        
+        // Fonction pour toggle les dropdowns sur mobile
+        function toggleDropdown(dropdownId) {
+            if (window.innerWidth <= 768) {
+                event.preventDefault();
+                const dropdown = document.getElementById(dropdownId);
+                dropdown.classList.toggle('active');
+            }
+        }
+        
+        // Événements
+        hamburger.addEventListener('click', toggleMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Fermer le menu en cliquant sur un lien (pour mobile)
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') !== '#') {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        // Ne pas fermer si c'est un toggle de dropdown
+                        if (!this.classList.contains('dropdown-toggle')) {
+                            closeMobileMenu();
+                        }
+                    }
+                });
+            }
+        });
+        
+        // Fermer le menu si la fenêtre est redimensionnée au-dessus de 768px
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Gérer les dropdowns sur desktop (hover) et mobile (click)
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            // Desktop: hover
+            dropdown.addEventListener('mouseenter', function() {
+                if (window.innerWidth > 768) {
+                    this.classList.add('active');
+                }
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                if (window.innerWidth > 768) {
+                    this.classList.remove('active');
+                }
+            });
+        });
+
+        
+        // Animation des cartes au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        // Observer les cartes
+        document.querySelectorAll('.chapitre-card').forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(30px)";
+            el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            observer.observe(el);
+        });
+
+        
+    </script>
+</body>
+</html>

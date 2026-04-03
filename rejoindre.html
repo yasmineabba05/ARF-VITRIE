@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejoindre ARF - ALL RIDING FAMILY</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="rejoindre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <div class="logo-title-container">
+          <img src="arf.jpeg" alt="All Riding Family Logo" class="logo-image">
+          <div class="logo-text">ARF</div>
+        </div>
+        <h1 style="color: rgba(228, 41, 8, 0.774); font-size:1rem; font-weight:500;">
+          WELCOME TO ARF COMMUNITY
+        </h1>
+      </div>
+  
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+  
+      <!-- Overlay -->
+      <div class="menu-overlay" id="menuOverlay"></div>
+  
+      <!-- Navigation -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link" data-mobile-close>Accueil</a>
+        <a href="DAY.html" class="nav-link" data-mobile-close>Be Careful</a>    
+
+        <div class="dropdown" id="dropdownHistoire">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownHistoire">Histoire</a>
+          <div class="dropdown-content">
+            <a href="origine.html" data-mobile-close>Les Origines</a>
+            <a href="histoir.html" data-mobile-close>Histoire</a>
+            <a href="valeur.html" data-mobile-close>Nos Valeurs</a>
+          </div>
+        </div>
+  
+        <div class="dropdown" id="dropdownMembres">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownMembres">Membres</a>
+            <div class="dropdown-content">
+              <a href="#" data-mobile-close>Membres Actifs</a>
+              <a href="#" data-mobile-close>Rejoindre la Communauté</a>
+            </div>
+          </div>
+    
+          
+          <a href="#" class="nav-link" data-mobile-close>Accessoires</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-rejoindre">
+        <div class="hero-content">
+            <h1 class="hero-title">REJOIGNEZ LA FAMILLE</h1>
+            <p class="hero-subtitle">Votre place vous attend sur la route</p>
+            <p class="hero-quote">
+                "Une passion commune, une route partagée, une famille pour la vie. 
+                Rejoignez-nous et écrivez votre propre chapitre dans l'histoire d'ARF."
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="rejoindre-container">
+        <!-- Section Pourquoi Rejoindre -->
+        <section class="pourquoi-section">
+            <h2 class="section-title">POURQUOI NOUS REJOINDRE ?</h2>
+            <p class="section-subtitle" style="color: var(--blanc); max-width: 800px; margin: 0 auto 3rem; font-size: 1.3rem;">
+                ARF n'est pas qu'un club de moto, c'est une famille où chaque membre compte. 
+                Découvrez ce qui nous rend unique et pourquoi vous devriez faire partie de cette aventure.
+            </p>
+
+            <div class="avantages-grid">
+                <!-- Avantage 1 -->
+                <div class="avantage-card">
+                    <div class="avantage-icon">🤝</div>
+                    <h3 class="avantage-title">Solidarité Garantie</h3>
+                    <p style="color: var(--gris-clair);">
+                        Jamais seul sur la route. Que ce soit pour une panne mécanique ou un besoin d'assistance, 
+                        la famille ARF est toujours là pour ses membres.
+                    </p>
+                </div>
+
+                <!-- Avantage 2 -->
+                <div class="avantage-card">
+                    <div class="avantage-icon">🌍</div>
+                    <h3 class="avantage-title">Réseau International</h3>
+                    <p style="color: var(--gris-clair);">
+                        Accès à notre communauté dans plusieurs villes et pays. Des contacts, 
+                        des conseils et du soutien partout où vous roulerez.
+                    </p>
+                </div>
+
+                <!-- Avantage 3 -->
+                <div class="avantage-card">
+                    <div class="avantage-icon">🎯</div>
+                    <h3 class="avantage-title">Événements Exclusifs</h3>
+                    <p style="color: var(--gris-clair);">
+                        Sorties régulières, rallyes, voyages organisés et événements privés 
+                        réservés aux membres de la famille ARF.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire d'Inscription -->
+        <section class="formulaire-section">
+            <div class="form-container">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">FORMULAIRE D'INSCRIPTION</h2>
+                
+                <form id="inscription-form">
+                    <!-- Étape 1 : Informations Personnelles -->
+                    <div class="form-step">
+                        <h3 class="step-title">📋 ÉTAPE 1 : VOS INFORMATIONS</h3>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Nom Complet *</label>
+                            <input type="text" class="form-input" placeholder="Votre nom et prénom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email *</label>
+                            <input type="email" class="form-input" placeholder="votre@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Téléphone *</label>
+                            <input type="tel" class="form-input" placeholder="+212 6 XX XX XX XX" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Ville de Résidence *</label>
+                            <select class="form-select" required>
+                                <option value="">Sélectionnez votre ville</option>
+                                <option value="el-jadida">El Jadida</option>
+                                <option value="casablanca">Casablanca</option>
+                                <option value="paris">Paris</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Étape 2 : Informations Moto -->
+                    <div class="form-step">
+                        <h3 class="step-title">🏍️ ÉTAPE 2 : VOTRE MOTO</h3>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Marque et Modèle *</label>
+                            <input type="text" class="form-input" placeholder="Ex: Yamaha MT-07, Harley Sportster..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Année de la Moto</label>
+                            <input type="number" class="form-input" placeholder="2020" min="1980" max="2024">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Type de Moto *</label>
+                            <select class="form-select" required>
+                                <option value="">Sélectionnez le type</option>
+                                <option value="roadster">Roadster/Naked</option>
+                                <option value="custom">Custom/Cruiser</option>
+                                <option value="sportive">Sportive</option>
+                                <option value="trail">Trail/Adventure</option>
+                                <option value="scooter">Scooter</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Étape 3 : Motivation -->
+                    <div class="form-step">
+                        <h3 class="step-title">💬 ÉTAPE 3 : VOTRE MOTIVATION</h3>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Expérience en Moto *</label>
+                            <select class="form-select" required>
+                                <option value="">Niveau d'expérience</option>
+                                <option value="debutant">Débutant (moins de 1 an)</option>
+                                <option value="intermediaire">Intermédiaire (1-3 ans)</option>
+                                <option value="confirme">Confirmé (3-5 ans)</option>
+                                <option value="expert">Expert (plus de 5 ans)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Pourquoi souhaitez-vous rejoindre ARF ? *</label>
+                            <textarea class="form-textarea" placeholder="Parlez-nous de votre passion, de vos attentes, de ce que vous pouvez apporter à la communauté..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Comment avez-vous connu ARF ?</label>
+                            <select class="form-select">
+                                <option value="">Sélectionnez une option</option>
+                                <option value="ami">Par un ami membre</option>
+                                <option value="reseaux">Réseaux sociaux</option>
+                                <option value="evenement">Lors d'un événement</option>
+                                <option value="site">Site internet</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Étape 4 : Engagement -->
+                    <div class="form-step">
+                        <h3 class="step-title">✅ ÉTAPE 4 : ENGAGEMENT</h3>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" class="form-checkbox" id="reglement" required>
+                            <label for="reglement" style="color: var(--blanc);">
+                                Je m'engage à respecter le règlement intérieur et les valeurs d'ARF *
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" class="form-checkbox" id="securite" required>
+                            <label for="securite" style="color: var(--blanc);">
+                                Je m'engage à prioriser la sécurité dans toutes mes sorties *
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" class="form-checkbox" id="participation">
+                            <label for="participation" style="color: var(--blanc);">
+                                Je souhaite participer activement à la vie de la communauté
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" class="form-checkbox" id="newsletter">
+                            <label for="newsletter" style="color: var(--blanc);">
+                                Je souhaite recevoir les newsletters et informations ARF
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Bouton Soumission -->
+                    <button type="submit" class="btn">
+                        SOUMETTRE MA CANDIDATURE
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Processus d'Adhésion -->
+        <section class="processus-section">
+            <h2 class="section-title">PROCESSUS D'ADHÉSION</h2>
+            <p class="section-subtitle" style="color: var(--blanc); max-width: 800px; margin: 0 auto 3rem; font-size: 1.3rem; text-align: center;">
+                Notre processus en 4 étapes simples pour garantir que chaque nouveau membre s'intègre parfaitement à la famille.
+            </p>
+
+            <div class="processus-timeline">
+                <!-- Étape 1 -->
+                <div class="processus-step">
+                    <div class="processus-dot"></div>
+                    <div class="step-content">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Candidature</h3>
+                        <p style="color: var(--blanc);">
+                            Soumettez votre formulaire. Notre équipe examine chaque candidature 
+                            avec attention pour assurer la cohérence avec nos valeurs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Étape 2 -->
+                <div class="processus-step">
+                    <div class="processus-dot"></div>
+                    <div class="step-content">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Entretien</h3>
+                        <p style="color: var(--blanc);">
+                            Rencontre (physique ou virtuelle) avec un membre du comité d'accueil 
+                            pour échanger sur vos attentes et nos valeurs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Étape 3 -->
+                <div class="processus-step">
+                    <div class="processus-dot"></div>
+                    <div class="step-content">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Sortie d'Essai</h3>
+                        <p style="color: var(--blanc);">
+                            Participation à une sortie encadrée avec parrain pour découvrir 
+                            notre manière de rouler et rencontrer d'autres membres.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Étape 4 -->
+                <div class="processus-step">
+                    <div class="processus-dot"></div>
+                    <div class="step-content">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Intégration Officielle</h3>
+                        <p style="color: var(--blanc);">
+                            Cérémonie d'accueil et remise de votre pack membre ARF. 
+                            Bienvenue officiel dans la famille !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <h2 class="section-title" style="text-align: center;">QUESTIONS FRÉQUENTES</h2>
+            
+            <div class="faq-container">
+                <!-- Question 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quelles sont les conditions pour rejoindre ARF ?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les principales conditions sont : être majeur, posséder une moto en règle, 
+                        avoir son permis moto valide, adhérer à nos valeurs, et être prêt à s'engager 
+                        activement dans la communauté.</p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Y a-t-il des frais d'adhésion ?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, une cotisation annuelle de 500 MAD est demandée pour couvrir les frais 
+                        d'organisation, l'assurance groupe, et les goodies membres. Cette cotisation 
+                        donne accès à tous les avantages et événements ARF.</p>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Je suis débutant, puis-je quand même rejoindre ?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument ! Nous accueillons les motards de tous niveaux. Les débutants 
+                        bénéficient d'un parrainage spécial et de sorties adaptées pour progresser 
+                        en toute sécurité.</p>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quelle est la fréquence des sorties ?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous organisons des sorties hebdomadaires (le week-end), des événements 
+                        mensuels spéciaux, et 2-3 grands voyages par an. La participation est 
+                        toujours facultative selon vos disponibilités.</p>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Que comprend le pack membre ?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le pack membre comprend : un écusson ARF personnalisé, un t-shirt officiel, 
+                        une carte de membre, des autocollants, des réductions chez nos partenaires, 
+                        et l'accès à notre groupe privé.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Final -->
+        <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: linear-gradient(135deg, var(--gris-fonce), transparent); border-radius: 15px; border: 2px solid var(--rouge);">
+            <h2 style="color: var(--or); font-size: 2.5rem; margin-bottom: 1.5rem;">PRÊT À NOUS REJOINDRE ?</h2>
+            <p style="color: var(--blanc); font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem;">
+                Rejoignez dès aujourd'hui la plus grande famille motarde internationale. 
+                Ensemble, écrivons l'avenir d'ARF et créons des souvenirs inoubliables sur la route.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer Simple -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Section Logo et description -->
+        <div class="footer-section">
+            <div class="footer-brand">
+                <span class="moto-icon">🏍️</span>
+                <h3>ALL RIDING FAMILY</h3>
+                <span class="moto-icon">🏍️</span>
+            </div>
+            <p class="footer-motto">Une famille sans frontières</p>
+            <p class="footer-description">
+                Rejoignez la plus grande communauté de passionnés de moto. 
+                Partages, événements et aventures sans limites.
+            </p>
+        </div>
+
+        <!-- Liens rapides -->
+        <div class="footer-section">
+            <h4>Liens Rapides</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">ACCEUIL</a></li>
+                <li><a href="valeur.html">NOS VALEURS</a></li>
+                <li><a href="DAY.html">BE CAREFUL</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact et réseaux -->
+        <div class="footer-section">
+            <h4>Nous Contacter</h4>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> allridingfamily@.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> El Jadida , Maroc</p>
+            </div>
+            
+            <div class="social-media">
+                <h4>Suivez-nous</h4>
+                <div class="social-media">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/all_riding_family/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section Footer Bottom - AJOUTÉE -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="footer-credits">
+                <span>Développé avec passion par</span>
+                <a href="https://www.instagram.com/yasmi._.ne.ab/" target="_blank" class="developer-link">
+                    <i class="fas fa-code"></i>
+                    Abba Yasmine
+                </a>
+            </div>
+            <p>&copy; 2024 ALL RIDING FAMILY. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Variables globales
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        // Fonction pour ouvrir/fermer le menu mobile
+        function toggleMobileMenu() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            
+            // Empêche le défilement du body quand le menu est ouvert
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        // Fonction pour fermer le menu mobile
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Fermer tous les dropdowns
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+        
+        // Fonction pour toggle les dropdowns sur mobile
+        function toggleDropdown(dropdownId) {
+            if (window.innerWidth <= 768) {
+                event.preventDefault();
+                const dropdown = document.getElementById(dropdownId);
+                dropdown.classList.toggle('active');
+            }
+        }
+        
+        // Événements
+        hamburger.addEventListener('click', toggleMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Fermer le menu en cliquant sur un lien (pour mobile)
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') !== '#') {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        // Ne pas fermer si c'est un toggle de dropdown
+                        if (!this.classList.contains('dropdown-toggle')) {
+                            closeMobileMenu();
+                        }
+                    }
+                });
+            }
+        });
+        
+        // Fermer le menu si la fenêtre est redimensionnée au-dessus de 768px
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Gérer les dropdowns sur desktop (hover) et mobile (click)
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            // Desktop: hover
+            dropdown.addEventListener('mouseenter', function() {
+                if (window.innerWidth > 768) {
+                    this.classList.add('active');
+                }
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                if (window.innerWidth > 768) {
+                    this.classList.remove('active');
+                }
+            });
+        });
+
+        // Animation des étapes du processus
+        const processusSteps = document.querySelectorAll('.processus-step');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 300);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        processusSteps.forEach(step => {
+            observer.observe(step);
+        });
+
+        // Gestion du formulaire
+        const inscriptionForm = document.getElementById('inscription-form');
+        inscriptionForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validation simple
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = 'red';
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+            
+            if (isValid) {
+                // Simulation d'envoi
+                const submitBtn = this.querySelector('.btn');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Envoi en cours...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    alert('✅ Candidature envoyée avec succès !\n\nVous recevrez une réponse sous 48h.\nBienvenue dans le processus d\'intégration ARF !');
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    this.reset();
+                    
+                    // Scroll vers le message de confirmation
+                    window.scrollTo({
+                        top: document.querySelector('.processus-section').offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }, 2000);
+            } else {
+                alert('⚠️ Veuillez remplir tous les champs obligatoires (*)');
+            }
+        });
+
+        // FAQ Accordéon
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Fermer les autres
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Ouvrir/fermer celui-ci
+                item.classList.toggle('active');
+            });
+        });
+
+        // Animation des cartes avantages
+        const avantageCards = document.querySelectorAll('.avantage-card');
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform = "translateY(0)";
+                    }, index * 200);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        avantageCards.forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "all 0.6s ease";
+            cardObserver.observe(card);
+        });
+
+        // Effet de validation des champs
+        const formInputs = document.querySelectorAll('.form-input, .form-select, .form-textarea');
+        formInputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() && this.hasAttribute('required')) {
+                    this.style.borderColor = 'var(--vert)';
+                } else if (!this.value.trim() && this.hasAttribute('required')) {
+                    this.style.borderColor = 'var(--rouge)';
+                }
+            });
+            
+            input.addEventListener('input', function() {
+                if (this.value.trim()) {
+                    this.style.borderColor = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

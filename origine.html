@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Origines - ALL RIDING FAMILY</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="origine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style pour les photos des fondateurs */
+.fondateur-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffb347;
+    box-shadow: 0 0 20px rgba(78, 205, 196, 0.3);
+    transition: all 0.3s ease;
+    background: #1e4a6e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondateur-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.fondateur-card:hover .fondateur-photo {
+    border-color: #4ecdc4;
+    box-shadow: 0 0 25px rgba(255, 179, 71, 0.5);
+    transform: scale(1.05);
+}
+
+.fondateur-card:hover .fondateur-photo img {
+    transform: scale(1.1);
+}
+
+/* Supprimer l'ancien style des emojis */
+.fondateur-photo {
+    font-size: 0;
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <div class="logo-title-container">
+          <img src="arf.jpeg" alt="All Riding Family Logo" class="logo-image">
+          <div class="logo-text">ARF</div>
+        </div>
+        <h1 style="color: rgba(228, 41, 8, 0.774); font-size:1rem; font-weight:500;">
+          WELCOME TO ARF COMMUNITY
+        </h1>
+      </div>
+  
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+  
+      <!-- Overlay -->
+      <div class="menu-overlay" id="menuOverlay"></div>
+  
+      <!-- Navigation -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link" data-mobile-close>Accueil</a>
+        <a href="DAY.html" class="nav-link" data-mobile-close>Be Careful</a>
+  
+        <div class="dropdown" id="dropdownHistoire">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownHistoire">Histoire</a>
+          <div class="dropdown-content">
+            <a href="origine.html" data-mobile-close>Les Origines</a>
+            <a href="histoir.html" data-mobile-close>Histoire</a>
+            <a href="valeur.html" data-mobile-close>Nos Valeurs</a>
+          </div>
+        </div>
+  
+        <div class="dropdown" id="dropdownMembres">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownMembres">Membres</a>
+            <div class="dropdown-content">
+              <a href="#" data-mobile-close>Membres Actifs</a>
+              <a href="#" data-mobile-close>Rejoindre la Communauté</a>
+            </div>
+          </div>
+    
+    
+          <a href="#" class="nav-link" data-mobile-close>Accessoires</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-origines">
+        <div>
+            <h1 class="hero-title">LES ORIGINES</h1>
+            <p class="hero-subtitle">De la côte marocaine aux rues de Paris : l'histoire d'une famille motarde sans frontières</p>
+        </div>
+    </section>
+
+    <!-- Section Origines -->
+    <section class="section-origines">
+        <div class="origine-container">
+            <!-- Section Maroc -->
+            <div class="section-maroc">
+                <div class="maroc-header">
+                    <h3 class="section-subtitle">Racines Marocaines</h3>
+                </div>
+                
+                <p class="ville-description" style="font-size: 1.2rem; margin-bottom: 2rem; text-align: center;">
+                    L'aventure commence au Maroc, terre de passion motarde où tout a commencé...
+                </p>
+                
+                <div class="villes-container">
+                    <!-- El Jadida -->
+                    <div class="ville-card">
+                        <h4 class="ville-title">🏖️ EL JADIDA</h4>
+                        <p class="ville-description">
+                            Berceau de la communauté ARF, El Jadida a vu naître les premières balades motardes 
+                            en 2015. Les plages et les routes côtières ont été nos premiers terrains de jeu.
+                        </p>
+                        <ul style="color: var(--blanc); padding-left: 1.5rem; margin-top: 1rem;">
+                            <li>Première rencontre : Plage Sidi Bouzid</li><br>
+                            <li>Fondateurs : AWAR RACHOUI, FATIMA ZAHRA BENMLIH, BRAHIM GHARBAOUI</li><br>
+                            <li>Spécialité : Balades côtières</li><br>
+                            <li>Événement phare : Rassemblement estival</li><br>
+                        </ul>
+                    </div>
+                    
+                    <!-- Casablanca -->
+                    <div class="ville-card">
+                        <h4 class="ville-title">🌆 CASABLANCA</h4>
+                        <p class="ville-description">
+                            L'expansion vers la capitale économique en 2017 a marqué le début de notre 
+                            croissance. Casa a apporté son énergie urbaine et ses motards passionnés.
+                        </p>
+                        <ul style="color: var(--blanc); padding-left: 1.5rem; margin-top: 1rem;">
+                            <li>Point de rencontre : Corniche de Casablanca</li><br>
+                            <li>Pionniers :AWAR RACHOUI, ANASS OUAIR, ADAM MAHFOUD,</li><br>
+                            <li>Spécialité : Sorties nocturnes</li><br>
+                            <li>Événement phare : Night Ride Casablanca</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section-origines" style="background-color: var(--noir);">
+        <div class="origine-container">
+            <h2 class="section-title">NOTRE CHRONOLOGIE</h2>
+            
+            <div class="timeline">
+                <!-- 2017 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <p class="timeline-desc">La Creation du Groupe</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">29/08/2024</div>
+                        <p class="timeline-desc">Le premier départ qui a marqué le début de l’aventure ARF</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">16/02/2025</div>
+                        <p class="timeline-desc">Organisation du premier événement officiel d’ARF consacré à la sensibilisation à la sécurité routière à El Jadida</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">28/10/2025</div>
+                        <p class="timeline-desc">Cette action solidaire d’ARF, **« حملة دفء »**, est une initiative humanitaire visant à soutenir les familles et les enfants en situation de besoin. Elle reflète l’engagement social et l’esprit de solidarité de la communauté ARF.
+                            "</p>
+                    </div>
+                </div>
+                
+                <!-- 2020 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">17/05/2026</div>
+                        <p class="timeline-desc">La deuxième édition de la sensibilisation à la sécurité routière à El Jadida 🚦🏍️… stay tuned 🔔🔥</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Fondateurs -->
+    <section class="fondateurs-section">
+        <div class="origine-container">
+            <h2 class="section-title">NOS FONDATEURS</h2>
+            
+            <div class="fondateurs-grid">
+                <!-- Fondateur 1 - Anwar Rachoui -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="IMAGE/F4.png" alt="Anwar Rachoui">
+                    </div>
+                    <h3 class="fondateur-name">Anwar Rachoui</h3>
+                    <p class="fondateur-role">Fondateur - El Jadida</p>
+                    <p class="ville-description" style="font-size: 0.9rem;">
+                        "C'est sur les routes côtières que tout a commencé. La moto unit les âmes."
+                    </p>
+                </div>
+                
+                <!-- Fondateur 2 - EL MAHDI RAYCHI -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="IMAGE/F1.png" alt="EL MAHDI RAYCHI">
+                    </div>
+                    <h3 class="fondateur-name">EL MAHDI RAYCHI</h3>
+                    <p class="fondateur-role">Responsable Entreprises</p>
+                    <p class="ville-description" style="font-size: 0.9rem;">
+                        "Une moto bien entretenue, c'est une aventure sans souci."
+                    </p>
+                </div>
+                
+                <!-- Fondateur 3 - FATIMA ZAHRA -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="IMAGE/F6.png" alt="FATIMA ZAHRA">
+                    </div>
+                    <h3 class="fondateur-name">FATIMA ZAHRA BENMLIH</h3>
+                    <p class="fondateur-role">Responsable Invités</p>
+                    <p class="ville-description" style="font-size: 0.9rem;">
+                        "Rassembler les passionnés, créer des souvenirs inoubliables."
+                    </p>
+                </div>
+    
+                <!-- Fondateur 4 - BRAHIM GHARBAOUI -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="IMAGE/F3.png" alt="BRAHIM GHARBAOUI">
+                    </div>
+                    <h3 class="fondateur-name">BRAHIM GHARBAOUI</h3>
+                    <p class="fondateur-role">Responsable COMMUNICATION</p>
+                    <p class="ville-description" style="font-size: 0.9rem;">
+                        "Rassembler les passionnés, créer des souvenirs inoubliables."
+                    </p>
+                </div>
+    
+                <!-- Fondateur 5 - ANASS OUAIR -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="IMAGE/F2.png" alt="ANASS OUAIR">
+                    </div>
+                    <h3 class="fondateur-name">ANASS OUAIR</h3>
+                    <p class="fondateur-role">Responsable Animation</p>
+                    <p class="ville-description" style="font-size: 0.9rem;">
+                        "Rassembler les passionnés, créer des souvenirs inoubliables."
+                    </p>
+                </div>
+    
+                <!-- Fondateur 6 - ADAM MAHFOUD -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="IMAGE/F7.png" alt="ADAM MAHFOUD">
+                    </div>
+                    <h3 class="fondateur-name">ADAM MAHFOUD</h3>
+                    <p class="fondateur-role">Responsable Opération Terrain</p>
+                    <p class="ville-description" style="font-size: 0.9rem;">
+                        "Rassembler les passionnés, créer des souvenirs inoubliables."
+                    </p>
+                </div>
+    
+                <!-- Fondateur 7 - MOHAMMED AMINE HMIDOCH -->
+                <div class="fondateur-card">
+                    <div class="fondateur-photo">
+                        <img src="IMAGE/F5.png" alt="MOHAMMED AMINE HMIDOCH">
+                    </div>
+                    <h3 class="fondateur-name">MOHAMMED AMINE HMIDOCH</h3>
+                    <p class="fondateur-role">Responsable Logistique</p>
+                    <p class="ville-description" style="font-size: 0.9rem;">
+                        "Rassembler les passionnés, créer des souvenirs inoubliables."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Section Logo et description -->
+        <div class="footer-section">
+            <div class="footer-brand">
+                <span class="moto-icon">🏍️</span>
+                <h3>ALL RIDING FAMILY</h3>
+                <span class="moto-icon">🏍️</span>
+            </div>
+            <p class="footer-motto">Une famille sans frontières</p>
+            <p class="footer-description">
+                Rejoignez la plus grande communauté de passionnés de moto. 
+                Partages, événements et aventures sans limites.
+            </p>
+        </div>
+
+        <!-- Liens rapides -->
+        <div class="footer-section">
+            <h4>Liens Rapides</h4>
+            <ul class="footer-links">
+                <ul class="footer-links">
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="valeur.html">NOS VALEURS</a></li>
+                    <li><a href="DAY.html">BE CAREFUL</a></li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- Contact et réseaux -->
+        <div class="footer-section">
+            <h4>Nous Contacter</h4>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> allridingfamily@.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> El Jadida , Maroc</p>
+            </div>
+            
+            <div class="social-media">
+                <h4>Suivez-nous</h4>
+                <div class="social-media">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/all_riding_family/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section Footer Bottom - AJOUTÉE -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="footer-credits">
+                <span>Développé avec passion par</span>
+                <a href="https://www.instagram.com/yasmi._.ne.ab/" target="_blank" class="developer-link">
+                    <i class="fas fa-code"></i>
+                    Abba Yasmine
+                </a>
+            </div>
+            <p>&copy; 2024 ALL RIDING FAMILY. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Menu Hamburger
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Fermer le menu en cliquant sur un lien
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+// Animation des cartes au scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+    });
+}, observerOptions);
+
+    // Observer les cartes
+document.querySelectorAll('.chapitre-card').forEach(el => {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(30px)";
+    el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+    observer.observe(el);
+});
+        
+        // Observer les cartes et timeline
+        document.querySelectorAll('.ville-card, .fondateur-card, .timeline-item').forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(20px)";
+            el.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

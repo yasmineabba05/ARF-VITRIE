@@ -1,0 +1,613 @@
+/* ============================================
+   VARIABLES GLOBALES & CONFIGURATION
+   ============================================ */
+:root {
+    /* Couleurs principales */
+    --noir: #000000;
+    --rouge: #e60012;
+    --blanc: #ffffff;
+    --gris-fonce: #1a1a1a;
+    --gris-clair: #333333;
+    
+    /* Couleurs secondaires */
+    --rouge-hover: #ff3333;
+    --gris-texte: #cccccc;
+    --gris-texte-clair: #999999;
+    
+    /* Typographie */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-xs: 0.8rem;
+    --font-size-sm: 0.9rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.1rem;
+    --font-size-xl: 1.2rem;
+    --font-size-xxl: 1.5rem;
+    
+    /* Espacements */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.8rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+    
+    /* Bordures & Ombres */
+    --border-radius-sm: 3px;
+    --border-radius-md: 50%;
+    --shadow-light: 0 5px 15px rgba(230, 0, 18, 0.3);
+    --border-thin: 1px solid var(--gris-clair);
+    --border-thick: 3px solid var(--rouge);
+    
+    /* Animations */
+    --transition-fast: 0.3s ease;
+    --transition-normal: 0.6s ease-out;
+    --bounce-animation: bounce 2s infinite;
+    --fade-animation: fadeInUp 0.6s ease-out;
+}
+
+/* ============================================
+   RÉINITIALISATION & BASE
+   ============================================ */
+.footer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+}
+
+/* ============================================
+   FOOTER PRINCIPAL
+   ============================================ */
+.footer {
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: var(--spacing-xxl) 0 0;
+    margin-top: var(--spacing-xl);
+    border-top: var(--border-thick);
+    animation: var(--fade-animation);
+}
+
+/* Conteneur principal */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    padding: 0 var(--spacing-xl) var(--spacing-xl);
+}
+
+/* ============================================
+   SECTIONS DU FOOTER
+   ============================================ */
+.footer-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Séparation entre sections sur desktop */
+@media (min-width: 769px) {
+    .footer-section + .footer-section::before {
+        content: '';
+        position: absolute;
+        left: -1rem;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: var(--gris-clair);
+    }
+}
+
+/* ============================================
+   SECTION BRANDING/LOGO
+   ============================================ */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-brand h3 {
+    color: var(--rouge);
+    font-size: var(--font-size-xxl);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Icônes moto */
+.moto-icon {
+    font-size: 1.8rem;
+    animation: var(--bounce-animation);
+}
+
+/* Slogan et description */
+.footer-motto {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--blanc);
+    font-weight: 600;
+}
+
+.footer-description {
+    color: var(--gris-texte);
+    line-height: 1.6;
+    text-align: center;
+    font-size: var(--font-size-sm);
+}
+
+/* ============================================
+   TITRES DES SECTIONS
+   ============================================ */
+.footer-section h4 {
+    color: var(--rouge);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-lg);
+    border-bottom: 2px solid var(--rouge);
+    padding-bottom: var(--spacing-xs);
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+/* ============================================
+   LIENS RAPIDES - STYLE CENTRÉ SIMPLE
+   ============================================ */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer-links li:last-child {
+    border-bottom: none;
+}
+
+/* Effet de fond central */
+.footer-links li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle at center, 
+                rgba(230, 0, 18, 0.2) 0%, 
+                transparent 70%);
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease-out;
+    z-index: 0;
+}
+
+.footer-links li:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.footer-links a {
+    display: block;
+    color: var(--gris-texte);
+    text-decoration: none;
+    padding: 18px 20px;
+    transition: all 0.4s ease-out;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Effet de texte centré avec animation */
+.footer-links a span {
+    display: inline-block;
+    position: relative;
+    padding: 0 25px;
+}
+
+/* Flèches créées avec pseudo-éléments */
+.footer-links a span::before,
+.footer-links a span::after {
+    content: '›';
+    position: absolute;
+    top: 50%;
+    color: var(--rouge);
+    opacity: 0;
+    transform: translateY(-50%) scale(0);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer-links a span::before {
+    left: 0;
+    transform: translateY(-50%) translateX(-10px) scale(0);
+}
+
+.footer-links a span::after {
+    right: 0;
+    transform: translateY(-50%) translateX(10px) scale(0);
+}
+
+/* Ligne centrale */
+.footer-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+                transparent, 
+                var(--rouge), 
+                transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease-out;
+}
+
+/* Effet de texte au survol */
+.footer-links a:hover {
+    color: var(--rouge);
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(230, 0, 18, 0.3);
+}
+
+.footer-links a:hover::before {
+    width: 60%;
+}
+
+.footer-links a:hover span::before,
+.footer-links a:hover span::after {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}
+
+.footer-links a:hover span::before {
+    animation: leftArrowMove 1.2s infinite alternate;
+}
+
+.footer-links a:hover span::after {
+    animation: rightArrowMove 1.2s infinite alternate 0.2s;
+}
+
+@keyframes leftArrowMove {
+    0% { transform: translateY(-50%) translateX(0) scale(1); }
+    100% { transform: translateY(-50%) translateX(-5px) scale(1.1); }
+}
+
+@keyframes rightArrowMove {
+    0% { transform: translateY(-50%) translateX(0) scale(1); }
+    100% { transform: translateY(-50%) translateX(5px) scale(1.1); }
+}
+
+/* ============================================
+   INFORMATIONS DE CONTACT
+   ============================================ */
+.contact-info {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: var(--spacing-sm);
+    color: var(--gris-texte);
+    font-size: var(--font-size-sm);
+}
+
+.contact-info i {
+    color: var(--rouge);
+    width: 20px;
+    text-align: center;
+}
+
+/* ============================================
+   RÉSEAUX SOCIAUX
+   ============================================ */
+.social-media h4 {
+    margin-bottom: var(--spacing-md);
+}
+
+.social-icons {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--gris-clair);
+    border-radius: var(--border-radius-md);
+    color: var(--blanc);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    font-size: var(--font-size-lg);
+}
+
+.social-icons a:hover {
+    background-color: var(--rouge);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-light);
+}
+
+/* ============================================
+   FOOTER BOTTOM (CREDITS & COPYRIGHT)
+   ============================================ */
+.footer-bottom {
+    background-color: var(--gris-fonce);
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--spacing-xl);
+    border-top: var(--border-thin);
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: var(--gris-texte);
+    margin: 0;
+    font-size: var(--font-size-sm);
+}
+
+.footer-credits {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--gris-texte);
+    font-size: var(--font-size-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.developer-link {
+    color: var(--rouge);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color var(--transition-fast);
+}
+
+.developer-link:hover {
+    color: var(--rouge-hover);
+    text-decoration: underline;
+}
+
+.developer-link i {
+    font-size: 0.9em;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes bounce {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-5px); 
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablettes et petits écrans (≤ 768px) */
+@media (max-width: 768px) {
+    .footer {
+        padding: var(--spacing-xl) 0 0;
+        margin-top: var(--spacing-xxl);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 0 var(--spacing-lg) var(--spacing-xl);
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin-bottom: 0;
+    }
+    
+    .footer-brand {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-brand h3 {
+        font-size: 1.3rem;
+    }
+    
+    .moto-icon {
+        font-size: 1.5rem;
+    }
+    
+    .footer-motto {
+        font-size: var(--font-size-lg);
+    }
+    
+    .footer-description {
+        font-size: var(--font-size-xs);
+    }
+    
+    .contact-info p {
+        justify-content: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .social-icons a {
+        width: 36px;
+        height: 36px;
+        font-size: var(--font-size-base);
+    }
+    
+    .footer-bottom-content {
+        padding: 0 var(--spacing-lg);
+        gap: var(--spacing-sm);
+    }
+    
+    .footer-bottom {
+        padding: var(--spacing-lg) 0;
+    }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+    .footer-content {
+        padding: 0 var(--spacing-md) var(--spacing-lg);
+    }
+    
+    .footer-brand h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .footer-motto {
+        font-size: var(--font-size-base);
+    }
+    
+    .footer-section h4 {
+        font-size: var(--font-size-base);
+    }
+    
+    .footer-links a {
+        font-size: var(--font-size-xs);
+    }
+    
+    .contact-info p {
+        font-size: var(--font-size-xs);
+    }
+    
+    .social-icons {
+        gap: 10px;
+    }
+    
+    .social-icons a {
+        width: 32px;
+        height: 32px;
+        font-size: var(--font-size-xs);
+    }
+    
+    .footer-bottom-content {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .footer-credits {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .footer-bottom p {
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* ============================================
+   ACCESSIBILITÉ
+   ============================================ */
+.footer-links a:focus,
+.social-icons a:focus,
+.developer-link:focus {
+    outline: 2px solid var(--rouge);
+    outline-offset: 2px;
+    border-radius: var(--border-radius-sm);
+}
+
+/* Visibilité améliorée pour le focus clavier */
+.footer-links a:focus-visible,
+.social-icons a:focus-visible {
+    outline: 3px solid var(--rouge);
+    outline-offset: 3px;
+}
+
+/* ============================================
+   ÉTATS & INTERACTIONS
+   ============================================ */
+.footer-links a,
+.social-icons a,
+.developer-link {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet de soulignement animé pour les liens */
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--rouge);
+    transition: left var(--transition-fast);
+}
+
+.footer-links a:hover::after {
+    left: 0;
+}
+
+/* ============================================
+   UTILITAIRES
+   ============================================ */
+/* Classe pour cacher visuellement mais garder accessible */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

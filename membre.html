@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Fondateurs - ALL RIDING FAMILY</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="menbre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <div class="logo-title-container">
+        <img src="arf.jpeg" alt="All Riding Family Logo" class="logo-image">
+        <div class="logo-text">ARF</div>
+      </div>
+      <h1 style="color: rgba(228, 41, 8, 0.774); font-size:1rem; font-weight:500;">
+        WELCOME TO ARF COMMUNITY
+      </h1>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link" data-mobile-close>Accueil</a>
+      <a href="DAY.html" class="nav-link" data-mobile-close>Be Careful</a>
+
+      <div class="dropdown" id="dropdownHistoire">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownHistoire">Histoire</a>
+        <div class="dropdown-content">
+          <a href="origine.html" data-mobile-close>Les Origines</a>
+          <a href="histoir.html" data-mobile-close>Histoire</a>
+          <a href="valeur.html" data-mobile-close>Nos Valeurs</a>
+        </div>
+      </div>
+
+      <div class="dropdown" id="dropdownMembres">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdownMembres">Membres</a>
+        <div class="dropdown-content">
+          <a href="#" data-mobile-close>Membres Actifs</a>
+          <a href="#" data-mobile-close>Rejoindre la Communauté</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-link" data-mobile-close>Accessoires</a>
+    </nav>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="hero-fondateurs">
+        <div>
+            <h1 class="hero-title">LES FONDATEURS</h1>
+            <p class="hero-subtitle">Découvrez les visages et les histoires de ceux qui ont bâti notre famille motarde</p>
+        </div>
+    </section>
+
+    <!-- Filtres -->
+    <section class="filtres-section">
+        <h2 style="color: var(--rouge); margin-bottom: 2rem; font-size: 2rem;">FILTRER PAR VILLE</h2>
+        <div class="filtres-container">
+            <button class="filtre-btn el-jadida active" data-ville="el-jadida">🏖️ El Jadida</button>
+            <button class="filtre-btn casablanca" data-ville="casablanca">🌆 Casablanca</button>
+            <button class="filtre-btn" data-ville="tous" style="border-color: var(--rouge); color: var(--white);">🏍️ Tous les Membres</button>
+        </div>
+    </section>
+
+    <!-- Section El Jadida -->
+    <section class="section-ville" id="el-jadida">
+        <div class="ville-header el-jadida">
+            <h2 class="ville-title">
+                <span>🏖️</span>
+                EL JADIDA 
+                <span>🏖️</span>
+            </h2>
+            <p class="ville-subtitle">Les membres fondateurs de la côte marocaine - Depuis 2024</p>
+        </div>
+
+        <div class="membres-grid">
+            <!-- Membre 1 - El Jadida -->
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membre 2 - El Jadida -->
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membre 3 - El Jadida -->
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite el-jadida">
+                <div class="carte-header el-jadida">
+                    <div class="carte-avatar el-jadida" data-fallback="👑">
+                        <img src="" alt="Youssef Alami" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">YOUSSEF ALAMI</h3>
+                    <p class="carte-surnom">"Le Sultan des Routes"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 42 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Harley-Davidson Street Glide</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">👑 Fondateur & Président</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2015 (Membre Fondateur)</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Section Casablanca -->
+    <section class="section-ville" id="casablanca" style="background-color: var(--noir);">
+        <div class="ville-header casablanca">
+            <h2 class="ville-title">
+                <span>🌆</span>
+                CASABLANCA
+                <span>🌆</span>
+            </h2>
+            <p class="ville-subtitle">Les moteurs de la croissance urbaine - Depuis 2024</p>
+        </div>
+
+        <div class="membres-grid">
+            <!-- Membre 1 - Casablanca -->
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membre 2 - Casablanca -->
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membre 3 - Casablanca -->
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-identite casablanca">
+                <div class="carte-header casablanca">
+                    <div class="carte-avatar casablanca" data-fallback="💼">
+                        <img src="0"  alt="Amine Cherkaoui" class="avatar-img" onerror="this.parentElement.classList.add('fallback')">
+                    </div>
+                    <h3 class="carte-nom">AMINE CHERKAOUI</h3>
+                    <p class="carte-surnom">"Le Manager des Rues"</p>
+                </div>
+                <div class="carte-body">
+                    <div class="carte-info">
+                        <div class="info-label">Âge</div>
+                        <div class="info-value">🎂 35 ans</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Moto</div>
+                        <div class="info-value">🏍️ Ducati Multistrada V4</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Rôle</div>
+                        <div class="info-value">💼 Responsable Expansion</div>
+                    </div>
+                    <div class="carte-info">
+                        <div class="info-label">Année d'adhésion</div>
+                        <div class="info-value">📅 2017</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Section Logo et description -->
+        <div class="footer-section">
+            <div class="footer-brand">
+                <span class="moto-icon">🏍️</span>
+                <h3>ALL RIDING FAMILY</h3>
+                <span class="moto-icon">🏍️</span>
+            </div>
+            <p class="footer-motto">Une famille sans frontières</p>
+            <p class="footer-description">
+                Rejoignez la plus grande communauté de passionnés de moto. 
+                Partages, événements et aventures sans limites.
+            </p>
+        </div>
+
+        <!-- Liens rapides -->
+        <div class="footer-section">
+            <h4>Liens Rapides</h4>
+            <ul class="footer-links">
+                <ul class="footer-links">
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="valeur.html">NOS VALEURS</a></li>
+                    <li><a href="DAY.html">BE CAREFUL</a></li>
+                </ul>
+        </div>
+
+        <!-- Contact et réseaux -->
+        <div class="footer-section">
+            <h4>Nous Contacter</h4>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> allridingfamily@.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> El Jadida , Maroc</p>
+            </div>
+            
+            <div class="social-media">
+                <h4>Suivez-nous</h4>
+                <div class="social-media">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/all_riding_family/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section Footer Bottom - AJOUTÉE -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="footer-credits">
+                <span>Développé avec passion par</span>
+                <a href="https://www.instagram.com/yasmi._.ne.ab/" target="_blank" class="developer-link">
+                    <i class="fas fa-code"></i>
+                    Abba Yasmine
+                </a>
+            </div>
+            <p>&copy; 2024 ALL RIDING FAMILY. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Variables globales
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        // Fonction pour ouvrir/fermer le menu mobile
+        function toggleMobileMenu() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            
+            // Empêche le défilement du body quand le menu est ouvert
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        // Fonction pour fermer le menu mobile
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Fermer tous les dropdowns
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+        
+        // Fonction pour toggle les dropdowns sur mobile
+        function toggleDropdown(dropdownId) {
+            if (window.innerWidth <= 768) {
+                event.preventDefault();
+                const dropdown = document.getElementById(dropdownId);
+                dropdown.classList.toggle('active');
+            }
+        }
+        
+        // Événements
+        hamburger.addEventListener('click', toggleMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Fermer le menu en cliquant sur un lien (pour mobile)
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') !== '#') {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        // Ne pas fermer si c'est un toggle de dropdown
+                        if (!this.classList.contains('dropdown-toggle')) {
+                            closeMobileMenu();
+                        }
+                    }
+                });
+            }
+        });
+        
+        // Fermer le menu si la fenêtre est redimensionnée au-dessus de 768px
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Gérer les dropdowns sur desktop (hover) et mobile (click)
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            // Desktop: hover
+            dropdown.addEventListener('mouseenter', function() {
+                if (window.innerWidth > 768) {
+                    this.classList.add('active');
+                }
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                if (window.innerWidth > 768) {
+                    this.classList.remove('active');
+                }
+            });
+        });
+
+        // Filtres par ville
+        const filtreBtns = document.querySelectorAll('.filtre-btn');
+        const sectionsVilles = document.querySelectorAll('.section-ville');
+        const cartesMembres = document.querySelectorAll('.carte-identite');
+
+        filtreBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Mettre à jour les boutons actifs
+                filtreBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const ville = btn.dataset.ville;
+
+                if (ville === 'tous') {
+                    // Afficher toutes les sections et cartes
+                    sectionsVilles.forEach(section => {
+                        section.style.display = 'block';
+                    });
+                    cartesMembres.forEach(carte => {
+                        carte.style.display = 'block';
+                    });
+                } else {
+                    // Cacher toutes les sections
+                    sectionsVilles.forEach(section => {
+                        section.style.display = 'none';
+                    });
+
+                    // Afficher seulement la section correspondante
+                    const sectionToShow = document.getElementById(ville);
+                    if (sectionToShow) {
+                        sectionToShow.style.display = 'block';
+                    }
+
+                    // Afficher seulement les cartes de la ville sélectionnée
+                    cartesMembres.forEach(carte => {
+                        if (carte.classList.contains(ville)) {
+                            carte.style.display = 'block';
+                        } else {
+                            carte.style.display = 'none';
+                        }
+                    });
+                }
+
+                // Scroll vers la section
+                if (ville !== 'tous') {
+                    document.getElementById(ville).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation des cartes au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        // Observer les cartes
+        document.querySelectorAll('.carte-identite').forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(30px)";
+            el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            observer.observe(el);
+        });
+
+        // Gestion des erreurs de chargement d'images
+        document.querySelectorAll('.avatar-img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.parentElement.classList.add('fallback');
+            });
+            
+            // Préchargement des images pour éviter le flash
+            const tempImage = new Image();
+            tempImage.src = img.src;
+        });
+    </script>
+</body>
+</html>
